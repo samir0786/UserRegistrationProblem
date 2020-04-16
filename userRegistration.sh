@@ -24,6 +24,6 @@ read -p "Enter your mobile number : " mobileNumber
 mobileFormat="^[0-9]{2} [0-9]{10}$"
 validateUserDetails "$mobileNumber" $mobileFormat Mobile_Number
 read -p "Enter your Password: " password
-passwordPattern="^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9]{8,}$"
+passwordPattern="^(?=.*[@#$%!_-])(?=.*[0-9])(?=.*[A-Z])[A-Za-z0-9@#$%!_-]{8,}$"
 validateUserDetails $password $passwordPattern password_Pattern
 
