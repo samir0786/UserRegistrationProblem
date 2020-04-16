@@ -20,3 +20,6 @@ validateUserDetails "$lastName" $namePattern Last_Name
 read -p "Enter your Email-Id : " email
 emailPattern="^([a-zA-Z]{3,}([-|+|_|.]?[a-zA-Z0-9]+)?[@][a-zA-Z0-9]+[.][a-zA-Z]{2,3}([.]?[a-zA-Z]{2,3})?)$"
 validateUserDetails "$email" $emailPattern Email
+read -p "Enter your mobile number : " mobileNumber
+mobileFormat="^[0-9]{2} [0-9]{10}$"
+validateUserDetails "$mobileNumber" $mobileFormat Mobile_Number
