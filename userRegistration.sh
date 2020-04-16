@@ -23,3 +23,7 @@ validateUserDetails "$email" $emailPattern Email
 read -p "Enter your mobile number : " mobileNumber
 mobileFormat="^[0-9]{2} [0-9]{10}$"
 validateUserDetails "$mobileNumber" $mobileFormat Mobile_Number
+read -p "Enter your Password: " password
+passwordPattern="^[a-zA-Z]{8,}$"
+validateUserDetails $password $passwordPattern password_Pattern
+
